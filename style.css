@@ -268,3 +268,73 @@ body {
 .search-bar button:hover {
     background-color: #d91c2f;
 }
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .page-title {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding-bottom: 100px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+    
+    .search-bar button {
+        width: 100%;
+    }
+
+    .music-player {
+        padding: 0 15px;
+        height: 70px;
+        bottom: 0;
+    }
+
+    .player-track {
+        width: 50%;
+    }
+
+    .player-track img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .track-info h4 {
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+    }
+
+    .track-info p {
+        font-size: 11px;
+    }
+
+    .player-controls {
+        width: 50%;
+        align-items: flex-end;
+    }
+
+    .buttons {
+        margin-bottom: 0;
+        gap: 15px;
+    }
+
+    .progress, .player-volume {
+        display: none;
+    }
+}
